@@ -1,0 +1,105 @@
+/* ---------- CSS Змінні ---------- */
+:root {
+  --accent-color: #2196f3;
+  --hover-color: #188ce8;
+
+  --white-color: #ffffff;
+  --black-color: #000000;
+
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+
+  --light-bg-color: #f5f4fa;
+  --dark-bg-color: #2f303a;
+}
+
+/* ---------- Загальні стилі ---------- */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: var(--main-text-color);
+  background-color: var(--white-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ---------- Логотип ---------- */
+.logo, .logo-footer {
+  font-size: 24px;
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+/* ---------- Навігація ---------- */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.nav-list a:hover {
+  color: var(--accent-color);
+}
+
+/* ---------- Hero-секція ---------- */
+.hero {
+  background-color: var(--dark-bg-color);
+  color: var(--white-color);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.button {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: var(--hover-color);
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background-color: var(--dark-bg-color);
+  color: var(--white-color);
+  padding: 40px 0;
+}
+
+.footer a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.address {
+  margin-top: 20px;
+  font-style: normal;
+}
